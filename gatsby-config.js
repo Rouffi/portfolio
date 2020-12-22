@@ -6,7 +6,12 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `Rouffi`,
+    siteTitleAlt: `Rouffi's website`,
+    siteHeadline: `Rouffi's website - Welcome`,
+    siteDescription: `Designer, Cognitive Science, Paris`,
+    siteLanguage: `en`,
+    author: `@rouffi`,
   },
   plugins: [
     {
@@ -15,26 +20,31 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `Blog`,
-            slug: `/blog`,
-          },
-          {
             title: `About`,
             slug: `/about`,
           },
+          {
+            title: `Blog`,
+            slug: `/blog`,
+          },
+          
         ],
         externalLinks: [
           {
             name: `Twitter`,
             url: `https://twitter.com/rouffi`,
           },
-            {
-                name: `LinkedIn`,
-                url: `https://www.linkedin.com/in/rouffi/`,
-            },
+          {
+              name: `LinkedIn`,
+              url: `https://linkedin.com/in/rouffi/`,
+          },
+          {
+            name: `Facebook`,
+            url: `https://facebook.com/rouffix/`,
+          },
           {
             name: `Instagram`,
-            url: `https://www.instagram.com/rouffi/`,
+            url: `https://instagram.com/rouffi/`,
           },
         ],
       },
@@ -49,9 +59,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Romain Rouyer`,
+        short_name: `rouffi-website`,
+        description: `Site personel de Romain Rouyer, alias Rouffi`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
